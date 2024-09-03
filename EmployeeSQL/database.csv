@@ -1,0 +1,32 @@
+"dbms","table_catalog","table_schema","table_name","column_name","ordinal_position","data_type","character_maximum_length","constraint_type","table_schema-2","table_name-2","column_name-2"
+"postgresql","EmployeeSQL","public","departments","dept_no",1,"character varying",50,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","employees","emp_no",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","salaries","emp_no",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","salaries","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","titles","title_id",1,"character varying",50,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","dept_manager","dept_no",1,"character varying",50,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","dept_manager","emp_no",2,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","dept_emp","emp_no",1,"integer",NULL,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","dept_emp","dept_no",2,"character varying",50,"PRIMARY KEY",NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","dept_emp","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","dept_emp","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","dept_emp","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","dept_emp","dept_no",2,"character varying",50,"FOREIGN KEY","public","departments","dept_no"
+"postgresql","EmployeeSQL","public","dept_emp","dept_no",2,"character varying",50,"FOREIGN KEY","public","departments","dept_no"
+"postgresql","EmployeeSQL","public","dept_manager","dept_no",1,"character varying",50,"FOREIGN KEY","public","departments","dept_no"
+"postgresql","EmployeeSQL","public","dept_manager","dept_no",1,"character varying",50,"FOREIGN KEY","public","departments","dept_no"
+"postgresql","EmployeeSQL","public","dept_manager","emp_no",2,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","dept_manager","emp_no",2,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","dept_manager","emp_no",2,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","salaries","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","salaries","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","salaries","emp_no",1,"integer",NULL,"FOREIGN KEY","public","employees","emp_no"
+"postgresql","EmployeeSQL","public","employees","emp_title_id",2,"character varying",50,"FOREIGN KEY","public","titles","title_id"
+"postgresql","EmployeeSQL","public","employees","last_name",5,"character varying",50,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","employees","sex",6,"character varying",10,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","salaries","salary",2,"integer",NULL,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","departments","dept_name",2,"character varying",100,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","titles","title",2,"character varying",100,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","employees","birth_date",3,"date",NULL,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","employees","hire_date",7,"date",NULL,NULL,NULL,NULL,NULL
+"postgresql","EmployeeSQL","public","employees","first_name",4,"character varying",50,NULL,NULL,NULL,NULL
